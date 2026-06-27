@@ -1,0 +1,1521 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتيجة شهادة الدبلومات الفنية </title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-Y11SSH3Y2Z&amp;cx=c&amp;gtm=4e66o1"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-80186278-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-80186278-1');
+    </script>
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+input {
+    font-family: 'Cairo', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.customselectsize{
+    direction: rtl;
+    min-width: 380px;
+}
+
+.forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.signin-signup {
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+form.sign-in-form {
+  z-index: 2;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #444;
+  margin: 15px;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #4481eb;
+  border-color: #4481eb;
+}
+
+.btn {
+  width: 150px;
+  background-color: #04a296!important;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #04a296 !important;
+}
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(-45deg, #049979 0%, #04befe 100%);
+    transition: 1.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+.image {
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+  color: #fff;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.btn.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.right-panel .image,
+.right-panel .content {
+  transform: translateX(800px);
+}
+
+/* ANIMATION */
+
+.container.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content {
+  transform: translateX(-800px);
+}
+
+.container.sign-up-mode .signin-signup {
+  left: 25%;
+}
+
+.container.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  z-index: 2;
+}
+
+.container.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content {
+  transform: translateX(0%);
+}
+
+.container.sign-up-mode .left-panel {
+  pointer-events: none;
+}
+
+.container.sign-up-mode .right-panel {
+  pointer-events: all;
+}
+
+@media (max-width: 870px) {
+  .container {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .signin-signup {
+    width: 100%;
+    top: 90%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .customselectsize {
+    direction: rtl;
+    min-width: 320px;
+  }
+
+  .signin-signup,
+  .container.sign-up-mode .signin-signup {
+    left: 50%;
+  }
+
+  .panels-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+    grid-column: 1 / 2;
+  }
+
+  .right-panel {
+    grid-row: 3 / 4;
+  }
+
+  .left-panel {
+    grid-row: 1 / 2;
+  }
+
+  .image {
+    width: 200px;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+
+  .panel .content {
+    padding-right: 15%;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.8s;
+  }
+
+  .panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .panel p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+
+  .btn.transparent {
+    width: 110px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .container:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 72%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .container.sign-up-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 32%;
+    right: initial;
+  }
+
+  .container.sign-up-mode .left-panel .image,
+  .container.sign-up-mode .left-panel .content {
+    transform: translateY(-300px);
+  }
+
+  .container.sign-up-mode .right-panel .image,
+  .container.sign-up-mode .right-panel .content {
+    transform: translateY(0px);
+  }
+
+  .right-panel .image,
+  .right-panel .content {
+    transform: translateY(300px);
+  }
+
+  .container.sign-up-mode .signin-signup {
+    top: 5%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 570px) {
+  form {
+    padding: 0 1.5rem;
+  }
+    .customselectsize {
+        direction: rtl;
+        min-width: 280px;
+    }
+  .image {
+    display: none;
+  }
+  .panel .content {
+    padding: 0.5rem 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+
+  .container:before {
+    bottom: 75%;
+    left: 50%;
+  }
+
+  .container.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+    
+}
+
+/* Result Tables Style */
+.Result {
+    direction: rtl;
+    text-align: center;
+    margin: 80px 0px 0px 0px;
+}
+
+.table .thead-dark .changebcolor {
+    background: #5B2C6F;
+    border-color: #5B2C6F;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.table .thead-dark .changebcolor3 {
+    background: #2874A6;
+    border-color: #2874A6;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.firstTitle {
+    color: #5B2C6F;
+}
+
+.table .thead-dark .changebcolorIndicator {
+    background: #2874A6;
+    border-color: #2874A6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.total {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.table .thead-dark .changebcolor4 {
+    background: #1E8449;
+    border-color: #1E8449;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.ControlResult {
+    margin-top: 100px;
+    direction: rtl;
+    text-align: center;
+}
+
+    .ControlResult h1 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    .ControlResult .mtitle {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .ControlResult i {
+        font-size: 50px;
+        margin: 20px;
+        color: #5cb874;
+    }
+
+    .ControlResult p {
+        font-size: 24px;
+    }
+
+    .ControlResult h2 {
+        font-weight: 900;
+    }
+.myCircle {
+    border-radius: 50%;
+    border-color: rgb(199, 16, 16);
+    background-color: rgb(246, 189, 189);
+    color: rgb(199, 16, 16);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.degreeFont {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+textarea,
+input[type="text"] {
+    border: 1px solid #00b8ff;
+}
+
+textarea:hover,
+input[type="text"]:hover {
+    border-color: #0095ff; /* Hover color */
+}
+
+textarea:focus,
+input[type="text"]:focus {
+    border-color: #007bff; /* Focus color */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0px 8px 15px rgba(0, 159, 255, 0.3);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+input {
+    font-family: 'Cairo', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.customselectsize{
+    direction: rtl;
+    min-width: 380px;
+}
+
+.forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.signin-signup {
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+form.sign-in-form {
+  z-index: 2;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #444;
+  margin: 15px;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #4481eb;
+  border-color: #4481eb;
+}
+
+.btn {
+  width: 150px;
+  background-color: #04a296!important;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #04a296 !important;
+}
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(-45deg, #049979 0%, #04befe 100%);
+    transition: 1.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+.image {
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+  color: #fff;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.btn.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.right-panel .image,
+.right-panel .content {
+  transform: translateX(800px);
+}
+
+/* ANIMATION */
+
+.container.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content {
+  transform: translateX(-800px);
+}
+
+.container.sign-up-mode .signin-signup {
+  left: 25%;
+}
+
+.container.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  z-index: 2;
+}
+
+.container.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content {
+  transform: translateX(0%);
+}
+
+.container.sign-up-mode .left-panel {
+  pointer-events: none;
+}
+
+.container.sign-up-mode .right-panel {
+  pointer-events: all;
+}
+
+@media (max-width: 870px) {
+  .container {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .signin-signup {
+    width: 100%;
+    top: 90%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .customselectsize {
+    direction: rtl;
+    min-width: 320px;
+  }
+
+  .signin-signup,
+  .container.sign-up-mode .signin-signup {
+    left: 50%;
+  }
+
+  .panels-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+    grid-column: 1 / 2;
+  }
+
+  .right-panel {
+    grid-row: 3 / 4;
+  }
+
+  .left-panel {
+    grid-row: 1 / 2;
+  }
+
+  .image {
+    width: 200px;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+
+  .panel .content {
+    padding-right: 15%;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.8s;
+  }
+
+  .panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .panel p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+
+  .btn.transparent {
+    width: 110px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .container:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 72%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .container.sign-up-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 32%;
+    right: initial;
+  }
+
+  .container.sign-up-mode .left-panel .image,
+  .container.sign-up-mode .left-panel .content {
+    transform: translateY(-300px);
+  }
+
+  .container.sign-up-mode .right-panel .image,
+  .container.sign-up-mode .right-panel .content {
+    transform: translateY(0px);
+  }
+
+  .right-panel .image,
+  .right-panel .content {
+    transform: translateY(300px);
+  }
+
+  .container.sign-up-mode .signin-signup {
+    top: 5%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 570px) {
+  form {
+    padding: 0 1.5rem;
+  }
+    .customselectsize {
+        direction: rtl;
+        min-width: 280px;
+    }
+  .image {
+    display: none;
+  }
+  .panel .content {
+    padding: 0.5rem 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+
+  .container:before {
+    bottom: 75%;
+    left: 50%;
+  }
+
+  .container.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+    
+}
+
+/* Result Tables Style */
+.Result {
+    direction: rtl;
+    text-align: center;
+    margin: 80px 0px 0px 0px;
+}
+
+.table .thead-dark .changebcolor {
+    background: #5B2C6F;
+    border-color: #5B2C6F;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.table .thead-dark .changebcolor3 {
+    background: #2874A6;
+    border-color: #2874A6;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.firstTitle {
+    color: #5B2C6F;
+}
+
+.table .thead-dark .changebcolorIndicator {
+    background: #2874A6;
+    border-color: #2874A6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.total {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.table .thead-dark .changebcolor4 {
+    background: #1E8449;
+    border-color: #1E8449;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.ControlResult {
+    margin-top: 100px;
+    direction: rtl;
+    text-align: center;
+}
+
+    .ControlResult h1 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    .ControlResult .mtitle {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .ControlResult i {
+        font-size: 50px;
+        margin: 20px;
+        color: #5cb874;
+    }
+
+    .ControlResult p {
+        font-size: 24px;
+    }
+
+    .ControlResult h2 {
+        font-weight: 900;
+    }
+.myCircle {
+    border-radius: 50%;
+    border-color: rgb(199, 16, 16);
+    background-color: rgb(246, 189, 189);
+    color: rgb(199, 16, 16);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.degreeFont {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+textarea,
+input[type="text"] {
+    border: 1px solid #00b8ff;
+}
+
+textarea:hover,
+input[type="text"]:hover {
+    border-color: #0095ff; /* Hover color */
+}
+
+textarea:focus,
+input[type="text"]:focus {
+    border-color: #007bff; /* Focus color */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0px 8px 15px rgba(0, 159, 255, 0.3);
+}
+    /* 1. متغيرات الألوان والخطوط (توضع في بداية ملف الستايل) */
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* 2. تنسيق حقول الإدخال (تقدر تغير اسم الكلاس .form-control حسب ما إنت مسميه في الـ HTML) */
+.form-control {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    direction: rtl;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border: 1px solid #00b8ff;
+}
+html {
+    -webkit-locale: "en";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    position: relative;
+    min-height: 100%;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    /* تنسيقات حاوية النتيجة والجداول */
+#resultContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    direction: rtl;
+}
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.table-title {
+    background: #1b2a3a;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.result-table td {
+    padding: 12px 15px;
+    border: 1px solid #eef2f5;
+    font-size: 15px;
+    color: #333333;
+    text-align: right;
+}
+.result-table td:nth-child(odd) {
+    background: #f8fafc;
+    font-weight: bold;
+    width: 25%;
+    color: #1b2a3a;
+}
+.result-table td:nth-child(even) {
+    width: 25%;
+}
+.highlight-cell {
+    color: #28a745 !important;
+    font-weight: bold;
+}
+}
+/* تنسيقات الجدول المطابق للصورة */
+.result-view-container {
+    display: none; 
+    width: 100%;
+    max-width: 800px;
+    /* غيرنا الـ margin من 40 لـ 150 علشان ينزل تحت براحته */
+    /* لو حسيته لسة فوق، كبر الـ 150 دي خليها 200 أو 300 لحد ما يظبط معاك */
+    margin: 150px auto 40px auto; 
+    background: #fff;
+    padding: 20px;
+    direction: rtl;
+    z-index: 10; 
+    position: relative;
+}
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.table-custom th, .table-custom td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* جدول بيانات الطالب (الرأس الأخضر) */
+.student-data-header {
+    background-color: #04a296; /* لون أخضر مقارب للصورة */
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+}
+.table-custom .row-gray {
+    background-color: #f5f5f5;
+}
+
+/* جدول نتيجة الطالب (الرأس البنفسجي) */
+.student-result-header {
+    background-color: #5B2C6F; /* لون بنفسجي مثل الصورة */
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* النصوص الخضراء داخل الجدول الثاني */
+.green-text-value {
+    color: #1E8449;
+    font-weight: bold;
+}
+
+.btn-exit {
+    background-color: #04a296;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+.btn-exit:hover {
+    background-color: #038076;
+}
+.loading-text {
+    display: none;
+    color: #04a296;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ========================================= */
+/* أكواد وضع ظهور النتيجة (يتم تفعيلها بالجافاسكريبت) */
+/* ========================================= */
+.container.show-results-mode:before {
+    display: none !important; /* إخفاء الخلفية الملونة (الدايرة الكبيرة) */
+}
+.container.show-results-mode .panels-container {
+    display: none !important; /* إخفاء الجزء الجانبي (الصورة وكلمة مرحبا بكم) */
+}
+.container.show-results-mode .forms-container {
+    position: relative !important; /* إلغاء التموضع المطلق حتى لا يغطي على الجدول */
+    height: auto !important; 
+    padding-top: 30px !important; 
+}
+.container.show-results-mode .signin-signup {
+    position: relative !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 10 !important;
+}
+.container.show-results-mode {
+    background-color: #fff !important; /* التأكد من أن الخلفية بيضاء بالكامل */
+    min-height: auto !important;
+}
+.container.show-results-mode #resultBox {
+    margin: 20px auto 40px auto !important; /* تقليل المسافة ليظهر الجدول تحت البحث مباشرة */
+}
+</style>
+
+</head>
+<body>
+
+    <div b-3vvpvo35za="" class="container">
+        
+<div class="forms-container">
+    <div class="signin-signup">
+        <form class="sign-in-form" id="myForm" action="/" method="post" novalidate="novalidate">
+            <img src="logo.png" alt="MoeLogo" class="m-1 text-center" style="width: 150px; height: 150px;">
+            <h6 class="title text-center"> الإستعلام عن نتيجة الدبلومات الفنية 2025 - 2026</h6>
+
+            <div class="form-group customselectsize mt-2"></div>
+
+            <div class="form-group customselectsize">
+                <input type="text" class="form-control" placeholder="رقم الجلوس" data-val="true" data-val-required="من فضلك ادخل رقم الجلوس" id="SeatNumber" name="SeatNumber" value="">
+                <span class="text-danger field-validation-valid" id="seatNumberError"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="عرض النتيجة">
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8PA-ttzSzOVPiNQBUVYFkFwDPnrQu5YS59KJk0SIrKextTZQtwJXchcm1rvnPZmXn4k6YX9buDwTA2WxrIJUTEZ1eqvIq68K8DDOxRzZpQrMRR8Q0AdRODnSmA3trJkKxe4XKC4qXC7z_wxNntiEclg"></form>
+        <div class="d-flex justify-content-center text-center align-items-center" style="color:red">
+            
+        </div>
+    </div>
+</div>
+<div class="panels-container">
+    <div class="panel left-panel" style="justify-content: unset;gap:10dvh;">
+        <div class="content">
+            <h1>مرحباً بكم</h1>
+            <p style="font-size: 18px;">
+                بإمكانك الإطلاع على نتيجة الدبلومات الفنية من هنا
+            </p>
+        </div>
+        <img src="BKimg-removebg-preview.png" class="image" alt="" style="width: 43vw!important;">
+    </div>
+</div>
+<div id="resultBox" class="result-view-container">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img src="logo.png" alt="MoeLogo" style="width: 120px; height: 120px;">
+        <h4 style="color: #5B2C6F; font-weight: bold; margin-top: 10px;">نتيجة طلاب شهادة الدبلومات الفنية دور اول 2025 - 2026</h4>
+        <h2 id="res_status" style="font-weight: bold; margin-top: 10px;"></h2>
+    </div>
+
+    <table class="table-custom">
+        <thead>
+            <tr>
+                <th colspan="2" class="student-data-header">بيانات الطالب</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row-gray">
+                <td style="font-weight: bold; width: 30%;">رقم الجلوس</td>
+                <td id="res_seat"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">الإسم</td>
+                <td id="res_name"></td>
+            </tr>
+            <tr class="row-gray">
+                <td style="font-weight: bold;">المدرسة</td>
+                <td>العباسية الثانوية الكهربية بنين</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">المديرية</td>
+                <td>القاهرة</td>
+            </tr>
+            <tr class="row-gray">
+                <td style="font-weight: bold;">الإدارة التعليمية</td>
+                <td>ادارة الويلي</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table-custom">
+        <thead>
+            <tr>
+                <th colspan="2" class="student-result-header">نتيجة الطالب</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row-gray">
+                <td class="green-text-value" style="width: 40%;">المجموع الكلي</td>
+                <td id="res_total" style="font-weight: bold;"></td>
+            </tr>
+            <tr>
+                <td class="green-text-value">النسبة المئوية</td>
+                <td id="res_percentage" style="font-weight: bold;"></td>
+            </tr>
+            <tr class="row-gray">
+                <td class="green-text-value">النهاية العظمي للمجموع</td>
+                <td style="font-weight: bold;">700</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">النوعية</td>
+                <td>صناعي</td>
+            </tr>
+            <tr class="row-gray">
+                <td style="font-weight: bold;">الشعبة - المجال</td>
+                <td>فني اجهزة الكترونية</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">التخصص - المهنة</td>
+                <td>الكترونيات</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button class="btn-exit" onclick="window.location.reload();">خروج</button>
+</div>
+
+
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+    <script src="/js/app.js?v=S8WRlnvHsxzSKDqHZqdwPefkFSz8yF4fzN_Ju-iOdaA"></script>
+    
+<script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+
+
+
+        document.getElementById("myForm").onsubmit = (event) => {
+            // نمنع إعادة تحميل الصفحة الافتراضي
+            event.preventDefault(); 
+
+            let seatNumberError = document.getElementById("seatNumberError");
+            let SeatNumber = document.getElementById("SeatNumber");
+
+            // تنظيف الرسائل القديمة
+            seatNumberError.innerHTML = "";
+
+            // التحقق من رقم الجلوس
+            if (SeatNumber.value.length < 3) {
+                seatNumberError.innerHTML = "من فضلك ادخل رقم الجلوس";
+                return false;
+            }
+            if (isNaN(SeatNumber.value)) {
+                seatNumberError.innerHTML = "رقم الجلوس غير صحيح. من فضلك ادخل رقم الجلوس الصحيح";
+                return false;
+            }
+
+            // إظهار رسالة جاري البحث للطلاب
+            seatNumberError.innerHTML = "<span style='color: #04a296; font-weight: bold;'></span>";
+            
+            // ==========================================
+            // هام جداً: ضع رابط جوجل سكريبت الذي نسخته هنا
+            // ==========================================
+            let scriptURL = "https://script.google.com/macros/s/AKfycbwMcwBs0UfecGg6hyaiBuT0eqVipqvSGRt0frDui3ACj9BDPcVpMwTKbZW74NEccUJm/exec"; 
+            
+            // الاتصال بملف الشيت
+            fetch(scriptURL + "?seatNumber=" + SeatNumber.value)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.found === true) {
+                        // تفعيل وضع عرض النتيجة (يجعل الخلفية بيضاء ويخفي الجوانب مع الإبقاء على البحث)
+                        document.querySelector('.container').classList.add('show-results-mode');
+
+                        // تعبئة البيانات في الجداول المخفية
+                        document.getElementById('res_seat').innerText = data.seatNumber;
+                        document.getElementById('res_name').innerText = data.name;
+                        document.getElementById('res_total').innerText = data.total;
+                        document.getElementById('res_percentage').innerText = "% " + data.percentage;
+                        
+                        // برمجة إظهار كلمة ناجح أو راسب باللون المناسب
+                        let statusElement = document.getElementById('res_status');
+                        statusElement.innerText = data.status; // الكلمة اللي هتيجي من جوجل سكريبت
+                        
+                        // لو ناجح يتكتب بالأخضر، لو راسب يتكتب بالأحمر
+                        if (data.status === "ناجح") {
+                            statusElement.style.color = "#1E8449"; 
+                        } else {
+                            statusElement.style.color = "#C0392B"; 
+                        }
+
+                        // إظهار جدول النتيجة
+                        document.getElementById('resultBox').style.display = 'block';
+                    } else {
+                        // في حالة عدم العثور على الطالب
+                        seatNumberError.innerHTML = "رقم الجلوس هذا غير موجود في النظام.";
+                    }
+                })
+                .catch(error => {
+                    seatNumberError.innerHTML = "حدث خطأ أثناء الاتصال بالنتيجة. تأكد من الاتصال بالإنترنت.";
+                    console.error('Error!', error.message);
+                });
+        };
+    </script>
+
+
+
+</body></html>
