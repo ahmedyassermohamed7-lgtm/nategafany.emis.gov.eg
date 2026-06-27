@@ -1317,10 +1317,27 @@ html {
 }
 .container.show-results-mode {
     background-color: #fff !important; /* التأكد من أن الخلفية بيضاء بالكامل */
-    min-height: auto !important;
+    min-height: 100vh !important;
+    height: auto !important; /* الكود ده بيسمح للصفحة تطول على قد جداول النتيجة */
+    overflow-y: auto !important; /* الكود ده هو اللي بيشغل السكرول لتحت في الموبايل */
+    overflow-x: hidden !important; /* بيمنع الصفحة تتهز يمين وشمال */
+    padding-bottom: 50px !important; /* مساحة فاضية في آخر الصفحة عشان زرار الخروج ميكونش لازق تحت */
 }
 .container.show-results-mode #resultBox {
     margin: 20px auto 40px auto !important; /* تقليل المسافة ليظهر الجدول تحت البحث مباشرة */
+}
+
+@media (max-width: 570px) {
+    .table-custom {
+        font-size: 15px !important; /* تصغير حجم خط الجدول ليناسب الموبايل */
+    }
+    .table-custom th, .table-custom td {
+        padding: 8px !important; /* تقليل المسافات الداخلية عشان الجدول ميكبرش عن الشاشة */
+    }
+    .student-data-header, .student-result-header {
+        font-size: 16px !important; /* تصغير عناوين الجداول للموبايل */
+        padding: 10px !important;
+    }
 }
 </style>
 
